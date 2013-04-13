@@ -1,5 +1,7 @@
 Dropbots::Application.routes.draw do
 
+  devise_for :users
+
   # if user not logged in then make pages#home root "home"
   root :to => 'pages#home'
   
